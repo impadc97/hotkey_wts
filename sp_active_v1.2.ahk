@@ -3,10 +3,9 @@
 counter := 1
 omlet := 0
 omlet_key :=2
-
-Send {1}
-Loop 12{
+Loop 8{
   Loop 11{
+    Send {1}
     MouseClick, left
     Sleep, 3000
     Send {W down}
@@ -17,7 +16,6 @@ Loop 12{
     {
       Sleep, 2000
       Send {%omlet_key%}
-      Send {1}
       counter := 0
 	    omlet++
       if (omlet >= 8) 
@@ -27,6 +25,7 @@ Loop 12{
       }
     }
   }
+  Send {1}
   MouseClick, left
   counter++
   Sleep, 3000
@@ -34,6 +33,7 @@ Loop 12{
   Sleep, 1100
   Send {D up}
   Loop 11{
+    Send {1}
     MouseClick, left
     counter++
     Sleep, 3000
@@ -44,7 +44,6 @@ Loop 12{
     {
       Sleep, 2000
       Send {%omlet_key%}
-      Send {1}
 	    omlet++
       counter := 0
       if (omlet >= 8) 
@@ -54,6 +53,7 @@ Loop 12{
       }
     }
   }
+  Send {1}
   MouseClick, left
   counter++
   Sleep, 3000
