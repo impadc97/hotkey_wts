@@ -3,7 +3,7 @@
 counter := 1
 omlet := 0
 omlet_key :=2
-Loop 10{
+Loop 8{
   Loop 11{
     Send {1}
     MouseClick, left
