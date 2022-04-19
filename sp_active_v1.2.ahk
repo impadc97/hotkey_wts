@@ -18,7 +18,7 @@ Loop 8{
       Send {%omlet_key%}
       counter := 0
 	    omlet++
-      if (omlet >= 8) 
+      if (omlet >= 9) 
       {
         omlet :=0
         omlet_key++
@@ -46,7 +46,7 @@ Loop 8{
       Send {%omlet_key%}
 	    omlet++
       counter := 0
-      if (omlet >= 8) 
+      if (omlet >= 9) 
       {
         omlet :=0
         omlet_key++
