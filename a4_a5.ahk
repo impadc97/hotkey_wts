@@ -1,81 +1,19 @@
-#MaxThreadsBuffer On
 #Include lib.ahk
+#MaxThreadsBuffer On
+counter := 1
+omlet := 0
+omlet_key :=2
 #If, A_IsPaused
-Home::
+F11::
 suspend
 pause
 return
 #If
-Home::
+F11::
 suspend
 pause
 return
-#/::
-Loop 8{
-  Loop 11{
-    action()
-    movingUp()
-  }
-  action()
-  movingRight()
-  Loop 11{
-    action()
-    movingDown()
-  }
-  action()
-  movingRight()
-}
-Loop 1{
-;cot co cay va da
-  Loop 1{
-    action()
-    movingUp()
-  }
-  action() ;queo trai
-  jump2stepU()
-  
-  Loop 4{
-    action()
-    movingUp()
-  }
-  action()
-  jump2stepU()
-  action()
-  
-  movingRight()
-  action()
-
-  jump2stepD()
-  Loop 4{
-    action()
-    movingDown()
-  }
-  action()
-  jump2stepD()
-
-  Loop 1{
-    action()
-    movingDown()
-  }
-  action()
-  movingRight()
-
-}
-Loop 3{ ; 2 cot cuoi cung
-  Loop 11{
-    action()
-    movingUp()
-  }
-  action()
-  movingRight()
-  Loop 11{
-    action()
-    movingDown()
-  }
-  action()
-  movingRight()
-}
-; a4
+#-::
 Loop 4{
   action()
   movingUp()

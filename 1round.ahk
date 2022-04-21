@@ -1,12 +1,27 @@
-﻿#p::
-Loop 10
-{
-  if (A_Index = 8)
-    Send {2}
-    Send {1}
-  MouseClick, left
-  Sleep, 3000
-  Send {W down}
-  Sleep, 1000
-  Send {W up}
+﻿#MaxThreadsBuffer On
+#Include lib.ahk
+#If, A_IsPaused
+Home::
+suspend
+pause
+return
+#If
+Home::
+suspend
+pause
+return
+#/::
+Loop 1{
+  Loop 11{
+    action()
+    movingUp()
+  }
+  action()
+  movingRight()
+  Loop 11{
+    action()
+    movingDown()
+  }
+  action()
+  movingRight()
 }

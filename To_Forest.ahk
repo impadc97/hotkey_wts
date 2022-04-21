@@ -11,46 +11,46 @@ suspend
 pause
 return
 #/::
-Send {A down}
-    Sleep, 10000
-Send {A up}
+Send {Shift down}
 
 Send {W down}
-    Sleep, 10500
+Sleep, 5100
 Send {W up}
 
 Send {A down}
-    Sleep, 7000
+Sleep, 3600
 Send {A up}
 
 Send {W down}
-    Sleep, 16500
+Sleep, 9000
 Send {W up}
 
 Send {A down}
-    Sleep, 5000
+Sleep, 4000
 Send {A up}
 
 Send {W down}
-    Sleep, 17900
+Sleep, 9500
 Send {W up}
 
 Send {A down}
-    Sleep, 1200
+Sleep, 2000
 Send {A up}
 
 Send {W down}
-    Sleep, 17000
+Sleep, 9000
 Send {W up}
 
 Send {A down}
-    Sleep, 27500
+Sleep, 16000
 Send {A up}
 
 Send {W down}
-    Sleep, 2300
+Sleep, 1000
 Send {W up}
 
 Send {A down}
-    Sleep, 30000
+Sleep, 15000
 Send {A up}
+
+Send {Shift up}

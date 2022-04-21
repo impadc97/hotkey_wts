@@ -11,20 +11,6 @@ suspend
 pause
 return
 #/::
-Loop 8{
-  Loop 11{
-    action()
-    movingUp()
-  }
-  action()
-  movingRight()
-  Loop 11{
-    action()
-    movingDown()
-  }
-  action()
-  movingRight()
-}
 Loop 1{
 ;cot co cay va da
   Loop 1{
@@ -32,14 +18,18 @@ Loop 1{
     movingUp()
   }
   action() ;queo trai
-  jump2stepU()
+  movingRight()
+  jump2stepURight()
+  movingLeft()
   
   Loop 4{
     action()
     movingUp()
   }
   action()
-  jump2stepU()
+  movingRight()
+  jump2stepURight()
+  movingLeft()
   action()
   
   movingRight()
