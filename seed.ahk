@@ -1,9 +1,8 @@
-﻿
-#MaxThreadsBuffer On
+﻿#MaxThreadsBuffer On
 #If, A_IsPaused
-Home::
-suspend
-pause
+  Home::
+  suspend
+  pause
 return
 #If
 Home::
@@ -11,15 +10,15 @@ suspend
 pause
 return
 #/::
-counter := 1
-tree := 0
-tree_key :=1
+  counter := 1
+  tree := 0
+  tree_key :=1
 
-Send {9}
-Loop 5{
-  Loop 11{
-    MouseClick, left
-    tree++
+  Send {9}
+  Loop 8{
+    Loop 11{
+      MouseClick, left
+      tree++
       if (tree >= 9) 
       {
         tree :=0
@@ -28,104 +27,104 @@ Loop 5{
           tree_key:=1
         }
       }
-    Sleep, 3000
-    Send {W down}
-    Sleep, 1032
-    Send {W up}
-    counter++
-    if (counter >= 9) ;Gieo hat
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-      counter := 0
+      Sleep, 3000
+      Send {W down}
+      Sleep, 1032
+      Send {W up}
+      counter++
+      if (counter >= 9) ;Gieo hat
+      {
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        counter := 0
 
-    }
-  }
-  MouseClick, left
-    tree++
-    	    
-      if (tree >= 9) 
-      {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
-        }
       }
-  counter++
-  Sleep, 3000
-  Send {D down} ;queo phai
-  Sleep, 1070
-  Send {D up}
-  Loop 11{
+    }
     MouseClick, left
     tree++
+
     if (tree >= 9) 
-      {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
-        }
+    {
+      tree :=0
+      tree_key++
+      if (tree_key=9) {
+        tree_key:=1
       }
+    }
     counter++
     Sleep, 3000
-    Send {S down}
-    Sleep, 1032
-    Send {S up}
-    if (counter >= 9)
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-	    
-      counter := 0
-    }
-  }
-  MouseClick, left
+    Send {D down} ;queo phai
+    Sleep, 1070
+    Send {D up}
+    Loop 11{
+      MouseClick, left
       tree++
-    	    
       if (tree >= 9) 
       {
         tree :=0
         tree_key++
-                if (tree_key=9) {
+        if (tree_key=9) {
           tree_key:=1
         }
       }
-  counter++
-  Sleep, 3000
-  Send {D down}
-  Sleep, 1070
-  Send {D up}
-}
-Loop 1{
-;cot co cay va da
-  Loop 1{
-    MouseClick, left
-    Sleep, 3000
-    Send {W down}
-    Sleep, 1032
-    Send {W up}
-    counter++
-    if (counter >= 9) ;Can trung
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-      counter := 0
-	    tree++
-      if (tree >= 9) 
+      counter++
+      Sleep, 3000
+      Send {S down}
+      Sleep, 1032
+      Send {S up}
+      if (counter >= 9)
       {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+
+        counter := 0
+      }
+    }
+    MouseClick, left
+    tree++
+
+    if (tree >= 9) 
+    {
+      tree :=0
+      tree_key++
+      if (tree_key=9) {
+        tree_key:=1
+      }
+    }
+    counter++
+    Sleep, 3000
+    Send {D down}
+    Sleep, 1070
+    Send {D up}
+  }
+  Loop 1{
+    ;cot co cay va da
+    Loop 1{
+      MouseClick, left
+      Sleep, 3000
+      Send {W down}
+      Sleep, 1032
+      Send {W up}
+      counter++
+      if (counter >= 9) ;Can trung
+      {
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        counter := 0
+        tree++
+        if (tree >= 9) 
+        {
+          tree :=0
+          tree_key++
+          if (tree_key=9) {
+            tree_key:=1
+          }
         }
       }
     }
-  }
     MouseClick, left
     counter++
     Sleep, 3000 ;queo trai
@@ -141,33 +140,32 @@ Loop 1{
     Send {D down} ;queo phai
     Sleep, 1070
     Send {D up}
-    
-    
+
     Loop 4{
-    MouseClick, left
-    Sleep, 3000
-    Send {W down}
-    Sleep, 1032
-    Send {W up}
-    counter++
-    if (counter >= 9) ;Can trung
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-      counter := 0
-	    tree++
-      if (tree >= 9) 
+      MouseClick, left
+      Sleep, 3000
+      Send {W down}
+      Sleep, 1032
+      Send {W up}
+      counter++
+      if (counter >= 9) ;Can trung
       {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        counter := 0
+        tree++
+        if (tree >= 9) 
+        {
+          tree :=0
+          tree_key++
+          if (tree_key=9) {
+            tree_key:=1
+          }
         }
       }
     }
-  }
-  MouseClick, left
+    MouseClick, left
     counter++
     Sleep, 3000 ;queo trai
     Send {A down} 
@@ -182,16 +180,16 @@ Loop 1{
     Send {D down} ;queo phai
     Sleep, 1070
     Send {D up}
-  
-  MouseClick, left
-  Sleep, 3000
-  
-  Send {D down} ;queo phai
+
+    MouseClick, left
+    Sleep, 3000
+
+    Send {D down} ;queo phai
     Sleep, 1070
     Send {D up}
-    
-  MouseClick, left ;thu hoach cot da thu 2
-      Sleep, 3000 ;queo phai
+
+    MouseClick, left ;thu hoach cot da thu 2
+    Sleep, 3000 ;queo phai
     Send {D down} 
     Sleep, 1032
     Send {D up}
@@ -204,32 +202,32 @@ Loop 1{
     Send {A down} ;queo trai
     Sleep, 1032
     Send {A up} ;end queo trai
-  Loop 4{
-    MouseClick, left
-    Sleep, 3000
-    Send {S down}
-    Sleep, 1032
-    Send {S up}
-    counter++
-    if (counter >= 9) ;Can trung
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-      counter := 0
-	    tree++
-      if (tree >= 9) 
+    Loop 4{
+      MouseClick, left
+      Sleep, 3000
+      Send {S down}
+      Sleep, 1032
+      Send {S up}
+      counter++
+      if (counter >= 9) ;Can trung
       {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        counter := 0
+        tree++
+        if (tree >= 9) 
+        {
+          tree :=0
+          tree_key++
+          if (tree_key=9) {
+            tree_key:=1
+          }
         }
       }
     }
-  }
-  MouseClick, left ;thu hoach cot da thu 2
-      Sleep, 3000 ;queo phai
+    MouseClick, left ;thu hoach cot da thu 2
+    Sleep, 3000 ;queo phai
     Send {D down} 
     Sleep, 1070
     Send {D up}
@@ -243,111 +241,111 @@ Loop 1{
     Sleep, 1032
     Send {A up} ;end queo trai
 
-   Loop 1{
+    Loop 1{
+      MouseClick, left
+      tree++
+      if (tree >= 9) 
+      {
+        tree :=0
+        tree_key++
+        if (tree_key=9) {
+          tree_key:=1
+        }
+      }
+      counter++
+      Sleep, 3000
+      Send {S down}
+      Sleep, 1200
+      Send {S up}
+      counter++
+      if (counter >= 9) ;Can trung
+      {
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        counter := 0
+        tree++
+        if (tree >= 9) 
+        {
+          tree :=0
+          tree_key++
+          if (tree_key=9) {
+            tree_key:=1
+          }
+        }
+      }
+    }
     MouseClick, left
+    counter++
     tree++
     if (tree >= 9) 
-      {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
-        }
-      }
-    counter++
-    Sleep, 3000
-    Send {S down}
-    Sleep, 1200
-    Send {S up}
-    counter++
-    if (counter >= 9) ;Can trung
     {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-      counter := 0
-	    tree++
-      if (tree >= 9) 
-      {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
-        }
+      tree :=0
+      tree_key++
+      if (tree_key=9) {
+        tree_key:=1
       }
     }
-  }
-  MouseClick, left
-  counter++
-  tree++
-  if (tree >= 9) 
-      {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
-        }
-      }
-  Sleep, 3000
-  Send {D down} ;queo phai
-  Sleep, 1032
-  Send {D up}
+    Sleep, 3000
+    Send {D down} ;queo phai
+    Sleep, 1032
+    Send {D up}
 
-}
-Loop 1{ ; 2 cot cuoi cung
-  Loop 11{
-    MouseClick, left
-    Sleep, 3000
-    Send {W down}
-    Sleep, 1032
-    Send {W up}
-    counter++
-    if (counter >= 9) ;Can trung
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-      counter := 0
-	    tree++
-      if (tree >= 9) 
+  }
+  Loop 1{ ; 2 cot cuoi cung
+    Loop 11{
+      MouseClick, left
+      Sleep, 3000
+      Send {W down}
+      Sleep, 1032
+      Send {W up}
+      counter++
+      if (counter >= 9) ;Can trung
       {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        counter := 0
+        tree++
+        if (tree >= 9) 
+        {
+          tree :=0
+          tree_key++
+          if (tree_key=9) {
+            tree_key:=1
+          }
         }
       }
     }
-  }
-  MouseClick, left
-  counter++
-  Sleep, 3000
-  Send {D down} ;queo phai
-  Sleep, 1070
-  Send {D up}
-  Loop 11{
     MouseClick, left
     counter++
     Sleep, 3000
-    Send {S down}
-    Sleep, 1032
-    Send {S up}
-    if (counter >= 9)
-    {
-      Sleep, 2000
-      Send {9}
-      Send {%tree_key%}
-	    tree++
-      counter := 0
-      if (tree >= 9) 
+    Send {D down} ;queo phai
+    Sleep, 1070
+    Send {D up}
+    Loop 11{
+      MouseClick, left
+      counter++
+      Sleep, 3000
+      Send {S down}
+      Sleep, 1032
+      Send {S up}
+      if (counter >= 9)
       {
-        tree :=0
-        tree_key++
-                if (tree_key=9) {
-          tree_key:=1
+        Sleep, 2000
+        Send {9}
+        Send {%tree_key%}
+        tree++
+        counter := 0
+        if (tree >= 9) 
+        {
+          tree :=0
+          tree_key++
+          if (tree_key=9) {
+            tree_key:=1
+          }
         }
       }
     }
+    MouseClick, left
   }
-  MouseClick, left
-}
