@@ -1,8 +1,4 @@
-#MaxThreadsBuffer On
 #Include lib.ahk
-counter := 1
-omlet := 0
-omlet_key :=2
 #If, A_IsPaused
 Home::
 suspend
@@ -13,173 +9,173 @@ Home::
 suspend
 pause
 return
-#/::
+#+1::
 Loop 8{
   Loop 11{
-    action()
+    sow()
     movingUp()
   }
-  action()
+  sow()
   movingRight()
   Loop 11{
-    action()
+    sow()
     movingDown()
   }
-  action()
+  sow()
   movingRight()
 }
 Loop 1{
 ;cot co cay va da
   Loop 1{
-    action()
+    sow()
     movingUp()
   }
-  action() ;queo trai
+  sow() ;queo trai
   jump2stepU()
   
   Loop 4{
-    action()
+    sow()
     movingUp()
   }
-  action()
+  sow()
   jump2stepU()
-  action()
+  sow()
   
   movingRight()
-  action()
+  sow()
 
   jump2stepD()
   Loop 4{
-    action()
+    sow()
     movingDown()
   }
-  action()
+  sow()
   jump2stepD()
 
   Loop 1{
-    action()
+    sow()
     movingDown()
   }
-  action()
+  sow()
   movingRight()
 
 }
 Loop 3{ ; 2 cot cuoi cung
   Loop 11{
-    action()
+    sow()
     movingUp()
   }
-  action()
+  sow()
   movingRight()
   Loop 11{
-    action()
+    sow()
     movingDown()
   }
-  action()
+  sow()
   movingRight()
 }
 ; a4
 Loop 4{
-  action()
+  sow()
   movingUp()
 }
 Loop 2{
-  action()
+  sow()
   jump2stepU()
 }
-action()
+sow()
 movingUp()
-action()
+sow()
 movingRight()
-action()
+sow()
 movingDown()
 Loop 2{
-  action()
+  sow()
   jump2stepD()
 }
 Loop 4{
-  action()
+  sow()
   movingDown()
 }
-action() ; het cot 1-2 - a4
+sow() ; het cot 1-2 - a4
 movingRight()
 Loop 11{
-  action()
+  sow()
   movingUp()
 }
-action() ; het cot 3
+sow() ; het cot 3
 Loop 2{
   movingDown()
 }
 movingRight()
 Loop 9{
-  action()
+  sow()
   movingDown()
 }
-action() ; het cot 4
+sow() ; het cot 4
 movingRight()
 Loop 2{
-  action()
+  sow()
   movingUp()
 }
-action()
+sow()
 jump2stepU()
 Loop 4{
-  action()
+  sow()
   movingUp()
 } ; het cot 5
-action()
+sow()
 movingRight()
 Loop 2{ 
   movingUp() 
 }
 Loop 6{
-  action()
+  sow()
   movingDown()
 }
-action()
+sow()
 jump2stepD()
 Loop 2{
-  action()
+  sow()
   movingDown()
 }
-action() ; het cot 6
+sow() ; het cot 6
 movingRight()
 Loop 5{
-  action()
+  sow()
   movingUp()
 }
-action()
+sow()
 jump2stepU()
 Loop 3{
-  action()
+  sow()
   movingUp()
 }
-action() ; het cot 7
+sow() ; het cot 7
 movingRight()
 Loop 3{
-  action()
+  sow()
   movingDown()
 }
-action()
+sow()
 jump2stepD()
 Loop 5{
-  action()
+  sow()
   movingDown()
 }
-action() ; het cot 8
+sow() ; het cot 8
 Loop 2{
   movingUp()
 }
 movingRight()
 Loop 9{
-  action()
+  sow()
   movingUp()
 }
-action()
+sow()
 movingRight()
 Loop 9{
-  action()
+  sow()
   movingDown()
 }
-action()
+sow()
